@@ -154,9 +154,20 @@ function execmascara(){
 }
 
 function rg_mask(v){
-    v=v.replace(/\D/g,"");                 //Remove tudo o que não é dígito
-    v=v.replace(/^(\d{2})(\d)/g,"$1.$2");   //Coloca ponto entre o segundo e o terceiro dígitos
-    v=v.replace(/(\d{3})(\d)/g,"$1.$2");    //Coloca ponto entre o sexto e o setimo dígitos
-    v=v.replace(/(\d{3})(\d)/g,"$1-$2");   //Coloca ponto entre o decimo e o decimoprimeiro dígitos
+    v=v.replace(/\D/g,"");                 
+    v=v.replace(/^(\d{2})(\d)/g,"$1.$2");  
+    v=v.replace(/(\d{3})(\d)/g,"$1.$2");   
+    v=v.replace(/(\d{3})(\d)/g,"$1-$2");   
     return v
 }
+
+//Validar só numero
+function somenteNumeros(num) {
+    var er = /[^0-9.]/;
+    er.lastIndex = 0;
+    var campo = num;
+    if (er.test(campo.value)) {
+      campo.value = "";
+    }
+}
+
