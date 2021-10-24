@@ -12,7 +12,7 @@
 <body>
     <div class="form" method="GET">
         <form method="post" action="index.php"><br>
-            <h1>Dado de Pessoal</h1><br>
+            <h1>Dados Pessoais</h1><br>
 
     <div class="Dado de Pessoal">
         <h2>Cadastro</h2>
@@ -23,13 +23,13 @@
                     <input type="date" name="data" class= "formEntry" size="10" id="data"><br><br>
                     <label for="sexo">Sexo:</label> &nbsp;
                     <label for="mas">Masculino</label>
-                    <input type="radio" name="devweb" class= "formEntry" required>
+                    <input type="radio" name="devweb" class= "formEntry" >
                     <label for="fem">Feminino</label>
-                    <input type="radio" name="devweb" class= "formEntry" required><br><br>    
+                    <input type="radio" name="devweb" class= "formEntry" ><br><br>    
                     <label for="cpf">CPF:</label>            
                     <input type="text" name="cpf" id="cpf" onblur="javascript: validarCPF(this);" onkeypress="javascript: mascara(this, cpf_mask);" maxlength="14" class= "formEntry" required />
                     <label for="rg">RG:</label>
-                    <input type="text" name="rg" id="rg" onblur="javascript: validarRG(this);" onkeypress="javascript: mascara(this, rg_mask);" maxlength="11" class= "formEntry" required /> <br><br>
+                    <input type="text" name="rg" id="rg" onblur="javascript: validarRG(this);" onkeypress="javascript: mascara(this, rg_mask);" maxlength="11" class= "formEntry" /> <br><br>
                 </input>
                 </div>    
     </div> 
@@ -37,16 +37,16 @@
         <div class="Dado de Pessoal">
         <h2>Endereço</h2>
                 <div class="b">                    
-                    <lebal for="rua">Logradouro:</lebal>
+                    <label for="rua">Logradouro:</label>
                     <input type="text" class= "formEntry" size="30"placeholder="" required>
-                    <lebal for="nu">Número:</lebal>
-                    <input type="text" class= "formEntry" size="5"placeholder="" required>
-                    <lebal for="cep">CEP:</lebal>
-                    <input type="text" class= "formEntry" size="7"placeholder="" required><br><br>
+                    <label for="nu">Número:</label>
+                    <input type="text" class= "formEntry" size="5"placeholder="" onkeyup="javascript: somenteNumeros(this);"  class= "formEntry" required />
+                    <label for="cep">CEP:</label>
+                    <input type="text" class= "formEntry" size="7"placeholder="" ><br><br>
                     <label for="comp">Complemento:</label>
-                    <input type="text" class= "formEntry" size="30"placeholder="" required>
-                    <lebal for="cep">Bairro:</lebal> 
-                    <input type="text" class= "formEntry" placeholder="" required><br><br>            
+                    <input type="text" class= "formEntry" size="30"placeholder="" >
+                    <label for="cep">Bairro:</label> 
+                    <input type="text" class= "formEntry" placeholder="" ><br><br>            
                     <label for="cidade"> Cidade:</label>
                     <input type="text" class= "formEntry" placeholder="" required>
                     <label for="uf">Estado:</label>
@@ -87,18 +87,18 @@
         <h2>Contato</h2>
                 <div class="c">
                     <label for="Telefone">Telefone:</label>
-                    <input type="text" class= "formEntry"size="15" placeholder=""required>
+                    <input type="text" class= "formEntry"size="15" placeholder="">
                     <label for="Celular"> Celular:</label>
                     <input type="text" class= "formEntry"size="15" placeholder=""required>
                     <label for="email"> Email:</label>
-                    <input type="text" class= "formEntry"size="30" placeholder=""required><br><br><br>
+                    <input type="text" class= "formEntry"size="30" placeholder=""><br><br><br>
                     
                 </div>
         </div>
                      <input class="submit formEntry" type="submit" name="Enviar" value="Enviar"><br><br>
                       
         </form>
-    <script src="cadastro simples.js"></script>
+    <script src="Dado de Pessoal.js"></script>
         
 </body>
 </html>
