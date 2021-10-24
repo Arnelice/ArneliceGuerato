@@ -72,10 +72,10 @@ function execmascara(){
 }
 
 function cpf_mask(v){
-    v=v.replace(/\D/g,"")                 //Remove tudo o que não é dígito
-    v=v.replace(/(\d{3})(\d)/,"$1.$2")    //Coloca ponto entre o terceiro e o quarto dígitos
-    v=v.replace(/(\d{3})(\d)/,"$1.$2")    //Coloca ponto entre o setimo e o oitava dígitos
-    v=v.replace(/(\d{3})(\d)/,"$1-$2")   //Coloca ponto entre o decimoprimeiro e o decimosegundo dígitos
+    v=v.replace(/\D/g,"")                 
+    v=v.replace(/(\d{3})(\d)/,"$1.$2")    
+    v=v.replace(/(\d{3})(\d)/,"$1.$2")    
+    v=v.replace(/(\d{3})(\d)/,"$1-$2")   
     return v
 }
 
