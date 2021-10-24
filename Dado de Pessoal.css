@@ -1,0 +1,47 @@
+<style>
+*{
+    margin: 2;
+    padding: 2;
+    box-sizing: 2;
+    font-family: sans-serif;
+}
+
+body{background-color:rgb(235, 112, 42);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.form{
+    background:#b1aeae;
+    width: 50%;
+    height: 80%;
+    margin:0 auto;
+    text-align: center;
+    border: 3px solid rgb(38, 116, 45);
+    border-radius: 60px;
+    margin-top : 80px;
+}
+h2{
+    text-align:justify;
+}
+
+.a{
+    text-align:justify
+}
+
+.b{
+    text-align:justify
+}
+
+.c{
+    text-align:justify
+}
+
+h1{
+    background-color:
+}
+
+
+
+
+</style>
